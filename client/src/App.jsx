@@ -4,10 +4,12 @@ import Profile from './pages/Profile'
 import Signin from './pages/Signin'
 import SignUp from './pages/SignUp'
 import About from './pages/About'
+import { Navbar } from './components/Navbar'
 
 
 export const App = () => {
   return <BrowserRouter>
+    <Navbar/>
     <Routes>
       <Route path='/' element={ <Home/> } />
       <Route path='/profile' element={ <Profile/> } />
